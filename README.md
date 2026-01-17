@@ -31,6 +31,8 @@ sudo apt install -y nodejs
 node -v
 npm -v
 
+```
+
 --windows cmd 
 
 Descargar Node.js (LTS recomendado) desde la página oficial:
@@ -48,4 +50,5 @@ npm install
 
 npm start 
 
+```
 
