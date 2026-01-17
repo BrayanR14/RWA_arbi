@@ -52,3 +52,21 @@ npm start
 
 ```
 
+✅ 1) Instalar pnpm
+
+Si no tienes pnpm instalado, instálalo de forma global:
+
+```bash
+npm install -g pnpm
+pnpm -v
+```
+
+✅ 2) Instalar dependencias e iniciar el proyecto
+
+Abres React_proyect y en la línea de comandos ejecutas:
+
+```bash
+pnpm install
+
+pnpm start
+```
