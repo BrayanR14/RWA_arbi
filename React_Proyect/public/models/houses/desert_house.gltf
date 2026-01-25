@@ -1,0 +1,175 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.4.50",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "deserthouse",
+            "translation" : [
+                0.10962176322937012,
+                -0.0021457672119140625,
+                -0.27985846996307373
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "desert_house_grp",
+            "scale" : [
+                100,
+                100,
+                100
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "deserthouse_mat.001",
+            "normalTexture" : {
+                "index" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicRoughnessTexture" : {
+                    "index" : 2
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.008",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "TEXCOORD_0" : 1,
+                        "NORMAL" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "deserthouse_norm",
+            "uri" : "deserthouse_norm.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "deserthouse_bcolor",
+            "uri" : "deserthouse_bcolor.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "deserthouse_metal-deserthouse_rough",
+            "uri" : "deserthouse_metal-deserthouse_rough.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 12116,
+            "max" : [
+                3.4431519508361816,
+                5.97068452835083,
+                2.733468532562256
+            ],
+            "min" : [
+                -3.662395477294922,
+                0.0021457672119140625,
+                -2.1737515926361084
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 12116,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 12116,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 38766,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 145392,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96928,
+            "byteOffset" : 145392,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 145392,
+            "byteOffset" : 242320,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 77532,
+            "byteOffset" : 387712,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 465244,
+            "uri" : "desert_house.bin"
+        }
+    ]
+}
