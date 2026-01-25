@@ -1,0 +1,112 @@
+.home {
+  padding: 100px 2rem 3rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  color: #e2e8f0;
+  text-align: center;
+}
+
+.home-hero {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.home-hero h1 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.home-btn {
+  margin-top: 1.5rem;
+  background: #38bdf8;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  background: #1e293b;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+.stat-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.home-info {
+  max-width: 900px;
+  margin: auto;
+}
+
+.info-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-grid div {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 260px;
+}
+.info-grid h4 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.info-grid p {
+  opacity: 0.85;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.buttons {
+  gap: 1.5rem;
+}
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+}
+.primedemo {
+  padding: 80px 2rem 3rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  color: #e2e8f0;
+  text-align: center;
+}
+.primedemo {
+  padding: 80px 2rem 3rem;
+
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a 0%, #020
+617 100%);
+  color: #e2e8f0;
+  font-family: Arial, sans-serif;
+}
