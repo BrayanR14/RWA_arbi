@@ -55,6 +55,7 @@ loader.load(
   const geometry = new THREE.BoxGeometry();
   const material = new THREE.MeshStandardMaterial({ color: 0x38bdf8 });
   const cube = new THREE.Mesh(geometry, material);
+  cube.position.set(0, 1, 0);
   scene.add(cube);
 
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -64,7 +65,9 @@ loader.load(
 
   const animate = () => {
     animationId = requestAnimationFrame(animate);
-    cube.rotation.y += 0.005;
+    cube.rotation.y -= 0.01;
+    cube.rotation.z -= 0.01;
+    cube.rotation.x -= 0.01;
     controls.update();
     renderer.render(scene, camera);
   };
