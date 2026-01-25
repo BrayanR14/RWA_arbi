@@ -14,4 +14,13 @@ What you'll Learn and Build
 
 4 manage Data Access
 
-getting started
+## Getting started
+
+- Metamask
+- Node.js
+- Python3.8
+- Docker
+
+### instalation
+
+- npm install -g pnpm
