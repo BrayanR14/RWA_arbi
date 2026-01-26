@@ -1,0 +1,104 @@
+#!/usr/bin/env node
+
+import { execSync } from "child_process";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Necesario para usar __dirname en ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const args = process.argv.slice(2);
+const command = args[0];
+
+switch (command) {
+  case "start":
+    console.log("🚀 Iniciando servidor React...");
+    execSync("npm run dev", { stdio: "inherit" });
+    break;
+
+  case "build": 
+    console.log("📦 Construyendo proyecto...");
+    execSync("npm run build", { stdio: "inherit" });
+    break;
+    
+  case "b":
+    console.log("📦 Construyendo proyecto...");
+    execSync("npm run build", { stdio: "inherit" });
+    break;
+
+  case "create":
+    console.log("🧩 dame un momento, Creando componente...");
+    createComponent(args.slice(1));
+    break;
+    
+    case "c" : 
+    console.log("🧩 dame un momento, Creando componente...");
+    createComponent(args.slice(1));
+    break;
+
+  default:
+    console.log(`
+🧠 REA CLI - Comandos disponibles:
+
+rea start
+rea build
+rea create ruta/Componente
+rea create ruta/Componente --test
+`);
+}
+
+function createComponent(params) {
+  const createTest = params.includes("--test");
+  const componentPath = params.find(p => !p.startsWith("--"));
+
+  if (!componentPath) {
+    console.log("❌ Debes indicar una ruta para el componente");
+    process.exit(1);
+  }
+
+  const fullDir = path.join(process.cwd(), "src/components", componentPath);
+  const componentName = path.basename(componentPath);
+  const className = componentName.toLowerCase();
+
+  fs.mkdirSync(fullDir, { recursive: true });
+
+  const tsx = `import "./${componentName}.css";
+
+const ${componentName} = () => {
+  return (
+    <div className="${className}">
+      <h2>${componentName} component</h2>
+    </div>
+  );
+};
+
+export default ${componentName};
+`;
+
+  const css = `.${className} {
+  padding: 1rem;
+}
+`;
+
+  const test = `import { render, screen } from "@testing-library/react";
+import ${componentName} from "./${componentName}";
+
+describe("${componentName}", () => {
+  test("renders component", () => {
+    render(<${componentName} />);
+    expect(screen.getByText(/${componentName} component/i)).toBeInTheDocument();
+  });
+});
+`;
+
+  fs.writeFileSync(path.join(fullDir, `${componentName}.tsx`), tsx);
+  fs.writeFileSync(path.join(fullDir, `${componentName}.css`), css);
+
+  if (createTest) {
+    fs.writeFileSync(path.join(fullDir, `${componentName}.test.tsx`), test);
+  }
+
+  console.log(`✅ Componente ${componentName} creado en ${fullDir}`);
+}

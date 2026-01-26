@@ -60,6 +60,44 @@
   justify-content: center;
 }
 
+.home-promotions {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.content-promotions {
+    display: flex;
+    padding: 1rem;
+    background: linear-gradient(160deg, #000000, #0076b5, #000000,#0076b5,#0076b5, #000000,#0076b5 , #000000 );
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promotions-card {
+    margin: 0.1rem;
+}
+
+
+.title-offert{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  width: 100%;
+}
+
+.text-offert{
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
 .info-grid div {
   background: #1e293b;
   padding: 1.5rem;

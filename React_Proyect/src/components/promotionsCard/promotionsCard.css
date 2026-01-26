@@ -1,0 +1,61 @@
+.promotions-card {
+  width: 280px;
+  background: linear-gradient(135deg, #000000, #a1c2f8,#000000, #a1c2f8, #a1c2f8, #000000);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.promotions-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.promotions-card__image img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.promotions-card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.promotions-card__content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.promotions-card__content p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.promotions-card__price {
+  font-weight: bold;
+  color: #1d2671;
+  margin-top: 0.5rem;
+}
+
+.promotions-card button {
+  margin-top: auto;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background: #1d2671;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.promotions-card button:hover {
+  opacity: 0.9;
+}
