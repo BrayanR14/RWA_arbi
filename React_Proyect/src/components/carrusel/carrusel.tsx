@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import "./carrusel.css";
 
 const images = [
-  "https://picsum.photos/id/1015/900/400",
-  "https://picsum.photos/id/1016/900/400",
-  "https://picsum.photos/id/1018/900/400",
+  "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&h=400&fit=crop", 
+  "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=900&h=400&fit=crop", 
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&h=400&fit=crop"
 ];
 
 const Carrusel = () => {

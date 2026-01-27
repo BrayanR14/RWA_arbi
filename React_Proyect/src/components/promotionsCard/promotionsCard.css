@@ -58,4 +58,5 @@
 
 .promotions-card button:hover {
   opacity: 0.9;
+  background: linear-gradient(#fefefe,#38bdf8,#38bdf8,#fefefe);
 }

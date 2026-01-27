@@ -33,50 +33,49 @@ function Home() {
           <p className="text-offert">
             Descubre nuestras promociones exclusivas en destinos de ensueño.
           </p>
-        <PromotionsCard
-          title="Escapada a la montaña"
-          description="Respira aire puro con 3 noches en cabaña premium"
-          image="https://picsum.photos/400/301"
-          price="$299"
-          onClick={() => console.log("Montaña clickeada")}
-        />
         
         <PromotionsCard
-          title="Tour europeo"
-          description="Recorre 4 países en 10 días con guía incluido"
-          image="https://picsum.photos/400/302"
-          price="$1,899"
-          onClick={() => console.log("Europa clickeada")}
-        />
-        
-        <PromotionsCard
-          title="Aventura en la selva"
-          description="Explora la naturaleza con excursiones y canopy"
-          image="https://picsum.photos/400/303"
-          price="$650"
-          onClick={() => console.log("Selva clickeada")}
-        />
-        
-        <PromotionsCard
-          title="Crucero por el Caribe"
-          description="Lujo, playas y diversión en alta mar por 7 días"
-          image="https://picsum.photos/400/304"
-          price="$1,250"
-          onClick={() => console.log("Crucero clickeado")}
-        />
-        
-        <PromotionsCard
-          title="Fin de semana en ciudad histórica"
-          description="Hotel boutique + tours culturales guiados"
-          image="https://picsum.photos/400/305"
-          price="$210"
-          onClick={() => console.log("Ciudad histórica clickeada")}
-        />
+  title="Apartamento moderno en zona exclusiva"
+  description="2 habitaciones, balcón y vista panorámica a la ciudad"
+  image="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6"
+  price="$420.000.000 COP"
+  onClick={() => console.log("Apartamento moderno clickeado")}
+/>
+
+<PromotionsCard
+  title="Apartamento familiar amplio"
+  description="3 habitaciones, estudio y parqueadero cubierto"
+  image="https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+  price="$560.000.000 COP"
+  onClick={() => console.log("Apartamento familiar clickeado")}
+/>
+
+<PromotionsCard
+  title="Apartamento tipo loft"
+  description="Diseño industrial, espacios abiertos y excelente iluminación"
+  image="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+  price="$390.000.000 COP"
+  onClick={() => console.log("Loft clickeado")}
+/>
+
+<PromotionsCard
+  title="Penthouse de lujo con terraza"
+  description="Vista 360°, jacuzzi y acabados de alta gama"
+  image="https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+  price="$1.250.000.000 COP"
+  onClick={() => console.log("Penthouse clickeado")}
+/>
+
+<PromotionsCard
+  title="Apartamento en conjunto residencial"
+  description="Zonas comunes, piscina y vigilancia 24/7"
+  image="https://images.unsplash.com/photo-1484154218962-a197022b5858"
+  price="$480.000.000 COP"
+  onClick={() => console.log("Conjunto residencial clickeado")}
+/>
+
         </div>
       </div>
-
-      
-
 
       <section className="home-info">
         <h2>¿Cómo funciona?</h2>
