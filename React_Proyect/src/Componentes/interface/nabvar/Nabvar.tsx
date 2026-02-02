@@ -18,7 +18,8 @@ const Nabvar: React.FC = () => {
 
         {/* Links */}
         <ul className={`nav-links ${open ? "active" : ""}`}>
-          <li><a href="/">Dashboard</a></li>
+          <li><a href="/">Menu</a></li>
+          <li><a href="/"><Login></Login></a></li>
         </ul>
       </div>
     </nav>
