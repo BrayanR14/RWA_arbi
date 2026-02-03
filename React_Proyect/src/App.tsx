@@ -2,6 +2,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Nabvar from './Componentes/interface/nabvar/Nabvar';
 import Propiedades3D from './components/propiedaes/propiedades3D/propiedades3D';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function Home() {
   const navigate = useNavigate();
@@ -62,6 +64,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/propiedades3d" element={<Propiedades3D />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<h2>Página no encontrada</h2>} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );
