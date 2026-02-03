@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Nabvar.css";
-import { Login } from './components/Login/login';  
 
 const Nabvar: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +20,7 @@ const Nabvar: React.FC = () => {
         <ul className={`nav-links ${open ? "active" : ""}`}>
           <li><a href="/">Menu</a></li>
           <li><a href="/login">Login</a></li>
+          <li><a href="/counts">Cuentas</a></li>
         </ul>
       </div>
     </nav>

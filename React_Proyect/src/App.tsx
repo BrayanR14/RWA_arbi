@@ -4,6 +4,8 @@ import Nabvar from './Componentes/interface/nabvar/Nabvar';
 import Propiedades3D from './components/propiedaes/propiedades3D/propiedades3D';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Content from './components/Content/Content';
+import Counts from './components/counts/counts';
 
 function Home() {
   const navigate = useNavigate();
@@ -21,6 +23,8 @@ function Home() {
         </button>
       </section>
 
+      <Content />
+      
       <section className="home-stats">
         <div className="stat-card">
           <h3>+120</h3>
@@ -65,8 +69,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/propiedades3d" element={<Propiedades3D />} />
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<h2>Página no encontrada</h2>} />
         <Route path="/register" element={<Register />} />
+        <Route path="/counts" element={<Counts />} />
+        <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
     </BrowserRouter>
   );

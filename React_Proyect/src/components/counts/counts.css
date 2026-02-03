@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+.Custom_input{
+        border-radius: 20px;
+    background: linear-gradient(45deg, #050027, transparent);
+}
+
+.counts-shell {
+	--bg: radial-gradient(circle at 15% 20%, rgba(84, 240, 206, 0.18), transparent 45%),
+		linear-gradient(135deg, #030414, #070b24 60%, #050514);
+	--card: rgba(9, 12, 34, 0.78);
+	--card-strong: rgba(6, 8, 24, 0.88);
+	--outline: rgba(255, 255, 255, 0.1);
+	--ink: #f6f7ff;
+	--muted: rgba(255, 255, 255, 0.68);
+	--teal: #4fe9c9;
+	--peach: #ff8b62;
+	font-family: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+	min-height: 100vh;
+	padding: 3.5rem clamp(1rem, 6vw, 5rem);
+	background: var(--bg);
+	color: var(--ink);
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.counts-shell .pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+	padding: 0.35rem 0.9rem;
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.05);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.78rem;
+}
+
+.counts-hero {
+	display: grid;
+	grid-template-columns: minmax(280px, 1fr) minmax(220px, 360px);
+	gap: clamp(1.5rem, 4vw, 3.5rem);
+	align-items: center;
+}
+
+.counts-hero h1 {
+	margin: 0.7rem 0 0.4rem;
+	font-size: clamp(2.2rem, 4vw, 3.2rem);
+	line-height: 1.15;
+}
+
+.counts-hero p {
+	color: var(--muted);
+	margin: 0.4rem 0 0;
+}
+
+.counts-hero ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 1rem;
+}
+
+.counts-hero li {
+	background: var(--card);
+	border-radius: 24px;
+	padding: 1.4rem;
+	border: 1px solid var(--outline);
+	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55);
+}
+
+.counts-hero li strong {
+	display: block;
+	font-size: 2rem;
+	margin: 0.4rem 0;
+}
+
+.counts-hero li span {
+	color: var(--teal);
+	font-size: 0.9rem;
+}
+
+.account-selector {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+}
+
+.account-selector button {
+	text-align: left;
+	padding: 1.6rem;
+	border-radius: 26px;
+	border: 1px solid var(--outline);
+	background: var(--card-strong);
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.account-selector button .badge {
+	display: inline-flex;
+	padding: 0.25rem 0.7rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.08);
+	font-size: 0.75rem;
+}
+
+.account-selector button p {
+	margin: 0;
+	color: var(--muted);
+}
+
+.account-selector button.active {
+	border-color: var(--teal);
+	box-shadow: 0 15px 40px rgba(79, 233, 201, 0.25);
+	transform: translateY(-4px);
+}
+
+.account-detail {
+	background: rgba(5, 7, 22, 0.85);
+	border-radius: 32px;
+	border: 1px solid var(--outline);
+	padding: clamp(1.8rem, 4vw, 2.6rem);
+	box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+}
+
+.account-detail h2 {
+	margin: 0;
+}
+
+.account-detail p {
+	margin: 0;
+	color: var(--muted);
+}
+
+.limit-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+}
+
+.limit-grid div {
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	padding: 1rem 1.2rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.limit-grid strong {
+	display: block;
+	margin-top: 0.4rem;
+	font-size: 1.2rem;
+}
+
+.feature-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.feature-list li {
+	border-radius: 999px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 0.45rem 0.9rem;
+	background: rgba(255, 255, 255, 0.04);
+	font-size: 0.9rem;
+}
+
+.finance-panel {
+	background: rgba(6, 8, 26, 0.88);
+	border-radius: 34px;
+	border: 1px solid var(--outline);
+	padding: clamp(1.8rem, 4vw, 3rem);
+	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	gap: 1.8rem;
+}
+
+.finance-panel header h2 {
+	margin: 0.6rem 0 0.3rem;
+}
+
+.finance-panel header p {
+	color: var(--muted);
+	margin: 0;
+}
+
+.property-picker {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+}
+
+.property-picker button {
+	text-align: left;
+	border-radius: 26px;
+	border: 1px solid var(--outline);
+	padding: 1.2rem;
+	background: rgba(255, 255, 255, 0.02);
+	color: inherit;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.property-picker button span {
+	color: var(--teal);
+	font-weight: 600;
+}
+
+.property-picker button.active {
+	border-color: var(--teal);
+	transform: translateY(-3px);
+	box-shadow: 0 20px 45px rgba(79, 233, 201, 0.25);
+}
+
+.downpayment-picker {
+	border-radius: 26px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 1.2rem;
+	background: rgba(255, 255, 255, 0.03);
+	display: grid;
+	grid-template-columns: minmax(120px, auto) 1fr;
+	gap: 1rem;
+	align-items: center;
+}
+
+.downpayment-picker > div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.downpayment-picker button {
+	border-radius: 999px;
+	padding: 0.4rem 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+	transition: background 0.2s ease, border 0.2s ease;
+}
+
+.downpayment-picker button.active {
+	background: rgba(79, 233, 201, 0.15);
+	border-color: var(--teal);
+}
+
+.downpayment-picker ul {
+	grid-column: 1 / -1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	color: var(--muted);
+}
+
+.plan-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+}
+
+.plan-card {
+	border-radius: 28px;
+	border: 1px solid var(--outline);
+	background: rgba(5, 7, 24, 0.9);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
+	box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card .badge {
+	display: inline-flex;
+	padding: 0.2rem 0.7rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.08);
+	font-size: 0.75rem;
+}
+
+.plan-card .monthly {
+	font-size: 1.4rem;
+	color: var(--teal);
+}
+
+.plan-card ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.35rem;
+	color: var(--muted);
+}
+
+.plan-card footer {
+	margin-top: auto;
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+.property-comparison {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+}
+
+.property-comparison header h2 {
+	margin: 0.4rem 0;
+}
+
+.property-comparison header p {
+	margin: 0;
+	color: var(--muted);
+}
+
+.property-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 1rem;
+}
+
+.property-card {
+	border-radius: 28px;
+	border: 1px solid var(--outline);
+	padding: 1.4rem;
+	background: rgba(9, 12, 34, 0.78);
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.property-card strong {
+	font-size: 1.3rem;
+}
+
+.property-card ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: var(--muted);
+	display: grid;
+	gap: 0.3rem;
+}
+
+.property-card button {
+	margin-top: auto;
+	border-radius: 18px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+	color: inherit;
+	padding: 0.45rem 1rem;
+	cursor: pointer;
+}
+
+.property-card.active {
+	border-color: var(--teal);
+	box-shadow: 0 18px 45px rgba(79, 233, 201, 0.22);
+}
+
+.comparison-delta {
+	margin: 0;
+	font-size: 0.85rem;
+	color: var(--peach);
+}
+
+.operations-table {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.table-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(140px, 1fr));
+	background: rgba(4, 6, 20, 0.9);
+	border-radius: 28px;
+	border: 1px solid var(--outline);
+	box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+	overflow: hidden;
+}
+
+.table-head {
+	background: rgba(255, 255, 255, 0.05);
+	padding: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.78rem;
+}
+
+.table-grid div {
+	padding: 1rem 1.2rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.03);
+	border-right: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.table-grid div:nth-of-type(4n) {
+	border-right: none;
+}
+
+.counts-cta {
+	border-radius: 28px;
+	border: 1px solid var(--outline);
+	padding: clamp(1.5rem, 3vw, 2.5rem);
+	background: linear-gradient(120deg, rgba(255, 139, 98, 0.2), rgba(79, 233, 201, 0.18));
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.counts-cta h3 {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+.counts-cta p {
+	margin: 0.3rem 0 0;
+	color: var(--muted);
+}
+
+.counts-cta button {
+	border: none;
+	border-radius: 18px;
+	padding: 0.9rem 1.6rem;
+	font-weight: 600;
+	font-size: 1rem;
+	cursor: pointer;
+	background: #05050f;
+	color: var(--ink);
+	box-shadow: 0 18px 40px rgba(5, 5, 15, 0.4);
+}
+
+@media (max-width: 900px) {
+	.counts-hero {
+		grid-template-columns: 1fr;
+	}
+
+	.table-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.table-head,
+	.table-grid div {
+		border-right: none;
+	}
+
+	.downpayment-picker {
+		grid-template-columns: 1fr;
+	}
+
+	.property-picker,
+	.plan-grid,
+	.property-grid {
+		grid-template-columns: 1fr;
+	}
+}
