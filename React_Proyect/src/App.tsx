@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Content from './components/Content/Content';
 import Counts from './components/counts/counts';
+import { Testworks } from './components/testworks/testwork';
 
 function Home() {
   const navigate = useNavigate();
@@ -71,6 +72,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/counts" element={<Counts />} />
+        <Route path="/pruebas" element={<Testworks />} />
         <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
     </BrowserRouter>

@@ -21,6 +21,7 @@ const Nabvar: React.FC = () => {
           <li><a href="/">Menu</a></li>
           <li><a href="/login">Login</a></li>
           <li><a href="/counts">Cuentas</a></li>
+          <li><a href="/pruebas">Pruebas</a></li>
         </ul>
       </div>
     </nav>
